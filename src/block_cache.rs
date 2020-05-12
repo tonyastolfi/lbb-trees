@@ -8,6 +8,12 @@ pub struct BlockCache<B> {
 }
 
 impl<B> BlockCache<B> {
+    // TODO - this method should take some kind of config info param; which device, file/dir, URL, etc.
+    //
+    async fn recover() -> Result<(Self, BlockId), ()> {
+        Err(())
+    }
+
     async fn alloc(&self) -> Result<BlockId, ()> {
         Err(())
     }
